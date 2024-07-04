@@ -44,7 +44,7 @@ def updateTask(id):
     if request.method == 'POST':
         pass
     else
-        return 
+        return render_template("")
 
 def create_tables():
     with app.app_context():
