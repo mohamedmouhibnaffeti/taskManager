@@ -48,7 +48,7 @@ def updateTask(id):
             db.session.commit()
             return redirect('/')
         except:
-            
+            return "Error updating task"
     else:
         return render_template("update.html", task=task)
 
