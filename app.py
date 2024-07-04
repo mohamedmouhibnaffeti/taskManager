@@ -35,6 +35,8 @@ def deleteTask(id):
     try:
         db.session.delete(taskToDelete)
         db.session.commit()
+        return redirect('/')
+    except:
         
 
 # Function to create all tables within the application context
