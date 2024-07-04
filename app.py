@@ -26,7 +26,7 @@ def index():
         except:
             return "Error creating task"
     else:
-        tasks = Todo.query()
+        tasks = Todo.query.order_by
         return render_template("index.html")
 
 # Function to create all tables within the application context
