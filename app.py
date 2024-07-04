@@ -17,7 +17,7 @@ class Todo(db.Model):
 @app.route("/", methods=['POST', 'GET'])
 def index(request):
     if request.method == 'POST':
-        taskContent = request
+        taskContent = request.form[('')]
     else:
         return render_template("index.html")
 
