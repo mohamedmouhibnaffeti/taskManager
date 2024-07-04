@@ -39,8 +39,8 @@ def deleteTask(id):
     except:
         return "Error deleting task"
 
-@app.route("/update/<int:id>")
-def updateTask(id, methods=['GET', 'POST']):
+@app.route("/update/<int:id>", methods=['GET', 'POST'])
+def updateTask(id):
     
 
 def create_tables():
