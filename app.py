@@ -37,7 +37,7 @@ def deleteTask(id):
         db.session.commit()
         return redirect('/')
     except:
-        
+        return "Error deleting task"
 
 # Function to create all tables within the application context
 def create_tables():
