@@ -18,7 +18,7 @@ class Todo(db.Model):
 def index():
     if request.method == 'POST':
         taskContent = request.form['content']
-        print(taskContent)
+        newTask = Task.
     else:
         return render_template("index.html")
 
