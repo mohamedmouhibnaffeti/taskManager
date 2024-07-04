@@ -34,6 +34,7 @@ def deleteTask(id):
     taskToDelete = Todo.query.get_or_404(id)
     try:
         db.session.delete(taskToDelete)
+        db.session.commit()
         
 
 # Function to create all tables within the application context
