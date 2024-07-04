@@ -7,7 +7,7 @@ db = SQLAlchemy(app)
 
 class Todo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    
+    content = 
 
 @app.route("/")
 def index():
