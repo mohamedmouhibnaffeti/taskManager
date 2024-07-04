@@ -6,4 +6,4 @@ app = Flask(__name__)
 def index():
     return "Hello World"
 
-if app
+if __name__ == 
