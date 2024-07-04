@@ -22,7 +22,7 @@ def index():
         try:
             db.session.add(newTask)
             db.session.commit()
-            return redirect
+            return redirect('/')
         except:
             return "Error creating task"
     else:
