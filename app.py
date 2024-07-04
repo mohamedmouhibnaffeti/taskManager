@@ -20,7 +20,7 @@ def index():
         taskContent = request.form['content']
         newTask = Todo(content=taskContent)
         try:
-            
+            db.session.add(newTask)
         except:
             return "Error creating task"
     else:
