@@ -40,6 +40,7 @@ def deleteTask(id):
         return "Error deleting task"
 
 @app.route("/update/<int:id>")
+def updateTask(id)
 
 def create_tables():
     with app.app_context():
