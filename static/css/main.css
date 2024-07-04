@@ -3,4 +3,8 @@ body{
     font-family: sans-serif;
 }
 
-.content
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
