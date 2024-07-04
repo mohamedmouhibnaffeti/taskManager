@@ -21,7 +21,8 @@ def index():
         newTask = Todo(content=taskContent)
         try:
             db.session.add(newTask)
-            db.session.
+            db.session.commit()
+            return redirect
         except:
             return "Error creating task"
     else:
