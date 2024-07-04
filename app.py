@@ -15,7 +15,7 @@ class Todo(db.Model):
         return '<Task %r>' % self.id
 
 @app.route("/", methods=['POST', 'GET'])
-def index(request):
+def index():
     if request.method == 'POST':
         taskContent = request.form['content']
         print(taskContent)
