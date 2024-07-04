@@ -19,7 +19,8 @@ def index():
     if request.method == 'POST':
         taskContent = request.form['content']
         newTask = Todo(content=taskContent)
-        
+        try:
+            
     else:
         return render_template("index.html")
 
