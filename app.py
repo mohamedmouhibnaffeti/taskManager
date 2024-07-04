@@ -16,7 +16,7 @@ class Todo(db.Model):
 
 @app.route("/", methods=['POST', 'GET'])
 def index():
-    if request.method ==''
+    if request.method == 'POST'
     return render_template("index.html")
 
 # Function to create all tables within the application context
