@@ -12,7 +12,7 @@ class Todo(db.Model):
     date_created = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __rep__(self):
-        return ''
+        return '<Task %r>'
 
 @app.route("/")
 def index():
