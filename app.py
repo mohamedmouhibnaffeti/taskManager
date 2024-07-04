@@ -29,7 +29,7 @@ def index():
         tasks = Todo.query.order_by(Todo.date_created).all()
         return render_template("index.html", tasks=tasks)
 
-@app.route("/delete", methods=["DELETE"])
+@app.route("/delete", methods=['DELETE'])
 
 # Function to create all tables within the application context
 def create_tables():
