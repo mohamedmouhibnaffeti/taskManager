@@ -46,7 +46,9 @@ def updateTask(id):
         task.content = request.form['content']
         try:
             db.session.commit()
-            redirect('/')
+            return redirect('/')
+        except:
+            
     else:
         return render_template("update.html", task=task)
 
