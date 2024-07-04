@@ -41,7 +41,7 @@ def deleteTask(id):
 
 @app.route("/update/<int:id>", methods=['GET', 'POST'])
 def updateTask(id):
-    
+    return ''
 
 def create_tables():
     with app.app_context():
