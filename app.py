@@ -39,12 +39,12 @@ def deleteTask(id):
     except:
         return "Error deleting task"
 
-# Function to create all tables within the application context
+
+
 def create_tables():
     with app.app_context():
         db.create_all()
 
 if __name__ == "__main__":
-    # Create all tables before running the app
     create_tables()
     app.run(debug=True)
