@@ -41,7 +41,10 @@ def deleteTask(id):
 
 @app.route("/update/<int:id>", methods=['GET', 'POST'])
 def updateTask(id):
-    if request
+    if request.method == 'POST':
+        pass
+    else
+        return 
 
 def create_tables():
     with app.app_context():
