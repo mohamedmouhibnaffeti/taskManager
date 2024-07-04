@@ -43,7 +43,7 @@ def deleteTask(id):
 def updateTask(id):
     task = Todo.query.get_or_404(id)
     if request.method == 'POST':
-        pass
+        task.content = 
     else:
         return render_template("update.html", task=task)
 
