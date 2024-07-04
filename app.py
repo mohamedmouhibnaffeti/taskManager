@@ -20,6 +20,8 @@ def index():
         taskContent = request.form['content']
         newTask = Todo(content=taskContent)
         try:
+
+        except:
             
     else:
         return render_template("index.html")
