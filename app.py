@@ -31,7 +31,8 @@ def index():
 
 @app.route("/delete", methods=['DELETE'])
 def deleteTask(id):
-    taskToDelete = Todo
+    taskToDelete = Todo.query.get_or_40
+    
 
 # Function to create all tables within the application context
 def create_tables():
