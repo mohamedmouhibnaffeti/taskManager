@@ -30,6 +30,8 @@ def index():
         return render_template("index.html", tasks=tasks)
 
 @app.route("/delete", methods=['DELETE'])
+def deleteTask():
+    
 
 # Function to create all tables within the application context
 def create_tables():
