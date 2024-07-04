@@ -29,7 +29,7 @@ def index():
         tasks = Todo.query.order_by(Todo.date_created).all()
         return render_template("index.html", tasks=tasks)
 
-@app.route("/delete/<int:id>", methods=['DELETE'])
+@app.route("/delete/<int:id>")
 def deleteTask(id):
     taskToDelete = Todo.query.get_or_404(id)
     try:
