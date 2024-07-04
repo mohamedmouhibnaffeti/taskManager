@@ -43,7 +43,7 @@ def deleteTask(id):
 def updateTask(id):
     if request.method == 'POST':
         pass
-    else
+    else:
         return render_template("update.html")
 
 def create_tables():
