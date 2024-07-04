@@ -6,7 +6,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
-    id = db.Column(db.Integer, primar)
+    id = db.Column(db.Integer, primary_key=True)
+    
 
 @app.route("/")
 def index():
