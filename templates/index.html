@@ -20,7 +20,7 @@
                 <td style="border: 1px solid black; padding: 8px;">{{ task.date_created.date() }}</td>
                 <td style="border: 1px solid black; padding: 8px;">
                     <a href="/delete/{{task.id}}">Delete</a>
-                    <a href="#">Update</a>
+                    <a href="/update/{{task.id}}">Update</a>
                 </td>
             </tr>
         {% endfor %}
