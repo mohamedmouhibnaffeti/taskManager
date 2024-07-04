@@ -41,6 +41,7 @@ def deleteTask(id):
 
 @app.route("/update/<int:id>", methods=['GET', 'POST'])
 def updateTask(id):
+    
     if request.method == 'POST':
         pass
     else:
