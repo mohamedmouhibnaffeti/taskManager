@@ -21,6 +21,7 @@ def index():
         newTask = Todo(content=taskContent)
         try:
             db.session.add(newTask)
+            db.session.
         except:
             return "Error creating task"
     else:
