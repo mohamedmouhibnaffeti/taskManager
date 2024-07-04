@@ -1,3 +1,5 @@
 import Flask
 
-app = Flask(app)
+app = Flask(__name__)
+
+@app
